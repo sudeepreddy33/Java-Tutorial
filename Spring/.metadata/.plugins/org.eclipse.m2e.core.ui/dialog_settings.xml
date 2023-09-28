@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="/Users/rajasudeepreddyyalla/Documents/Java Tutorial/Spring/security"/>
+			<item value="/Users/rajasudeepreddyyalla/Documents/Java Tutorial/Spring/service-registry"/>
+			<item value="/Users/rajasudeepreddyyalla/Documents/Java Tutorial/Spring/question-microservice/src/main/java/com/microservices/question"/>
+			<item value="/Users/rajasudeepreddyyalla/Documents/Java Tutorial/Microservices/question-service"/>
+			<item value="/Users/rajasudeepreddyyalla/Documents/Java Tutorial/Spring/mvc"/>
+			<item value="/Users/rajasudeepreddyyalla/Documents/Java Tutorial/Spring"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+</section>

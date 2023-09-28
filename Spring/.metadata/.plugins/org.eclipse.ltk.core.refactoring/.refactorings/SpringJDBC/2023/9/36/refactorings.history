@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;org.example.dao&apos; to &apos;mvc/src/main/java/com.spring.mvc&apos;&#x0A;- Original project: &apos;SpringJDBC&apos;&#x0A;- Destination element: &apos;mvc/src/main/java/com.spring.mvc&apos;&#x0A;- Original element: &apos;SpringJDBC/src/main/java/org.example.dao&apos;" description="Copy package" destination="=mvc/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.spring.mvc" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;org.example.dao" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1694203140102" version="1.0"/>
+</session>

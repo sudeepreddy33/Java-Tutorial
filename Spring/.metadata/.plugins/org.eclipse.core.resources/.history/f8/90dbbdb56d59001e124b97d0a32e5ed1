@@ -1,0 +1,12 @@
+spring.datasource.url=jdbc:mysql://localhost:3306/Sudeep?useUnicode=true&&characterEncoding=UTF-8 
+spring.datasource.username=root
+spring.datasource.password=javauser
+spring.datasource.driverClassName=com.mysql.cj.jdbc.Driver
+spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
+spring.jpa.properties.hibernate.show_sql=true
+spring.jpa.hibernate.ddl-auto=update
+spring.application.name=security-demo-service
+#spring.security.oauth2.client.registration.google.client-id=525895069510-gjtt5jm60023flmoev54rgr3u0t74ope.apps.googleusercontent.com
+#spring.security.oauth2.client.registration.google.client-secret=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
+#spring.security.oauth2.client.registration.google.redirect-uri=http://localhost:8080/login/oauth2/code/google
+#spring.security.oauth2.client.registration.google.scope=openid,profile,email

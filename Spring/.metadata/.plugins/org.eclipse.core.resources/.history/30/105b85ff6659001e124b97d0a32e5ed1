@@ -1,0 +1,5 @@
+package com.sudeep.security.model;
+
+public class ImageData {
+
+}

@@ -1,0 +1,12 @@
+package com.sudeep.security.designpattern.prototype;
+
+
+
+public class BookStore {
+	
+	private int id;
+	private String name;
+	private String location;
+	private int numOfBooks;
+
+}

@@ -1,0 +1,20 @@
+package com.sudeep.security.singleton;
+
+public class DoubleCheckingLazySingletonDemo {
+	
+	//this is an approach which support multi-threading because of synchronized
+
+	private static DoubleCheckingLazySingletonDemo instance;
+
+	private DoubleCheckingLazySingletonDemo() {
+
+	}
+
+	public static synchronzied DoubleCheckingLazySingletonDemo getInstance() {
+		if (instance == null) {
+			instance = new DoubleCheckingLazySingletonDemo();
+		}
+		return instance;
+	}
+
+}

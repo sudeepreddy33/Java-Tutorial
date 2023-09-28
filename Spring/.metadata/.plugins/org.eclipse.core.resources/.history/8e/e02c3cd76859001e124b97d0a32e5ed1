@@ -1,0 +1,45 @@
+package com.sudeep.security.service;
+
+import java.io.IOException;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
+
+import com.sudeep.security.model.ImageData;
+import com.sudeep.security.repository.ImageDataRepository;
+import com.sudeep.security.util.ImageDataUtil;
+import com.sun.imageio.plugins.common.ImageUtil;
+
+@Service
+public class ImageDataService {
+
+	@Autowired
+	ImageDataRepository repo;
+
+	public String uploadImage(MultipartFile file) throws IOException {
+
+		ImageData imageData = repo.save(ImageData.builder()
+				.name(file.getOriginalFilename())
+				.type(file.getContentType())
+				.imageData(ImageDataUtil.compressByteArray(file.getBytes()))
+				.build());
+
+		if (imageData != null) {
+
+			return "File:::: " + file.getOriginalFilename() + " is successfully saved";
+		} else {
+
+		}
+		return "File:::: " + file.getOriginalFilename() + " is not saved";
+	}
+
+	public byte[] findByName(String fileName) {
+
+		Optional<ImageData> imageData = repo.findByName(fileName);
+
+		return ImageDataUtil.decompressByteArray(imageData.get().getImageData());
+	}
+
+}

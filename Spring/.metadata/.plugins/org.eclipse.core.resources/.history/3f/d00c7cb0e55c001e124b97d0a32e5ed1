@@ -1,0 +1,18 @@
+package com.sudeep.security.singleton;
+
+public class EagerSingletonDemo {
+
+	private static EagerSingletonDemo instance;
+
+	private EagerSingletonDemo() {
+
+	}
+
+	public static EagerSingletonDemo getInstance() {
+		if (instance == null) {
+			instance = new EagerSingletonDemo();
+		}
+		return instance;
+	}
+
+}

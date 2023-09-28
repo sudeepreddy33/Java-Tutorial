@@ -1,0 +1,28 @@
+package com.sudeep.security.controller;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.sudeep.security.model.ImageData;
+import com.sudeep.security.service.ImageDataService;
+
+@Controller
+@RequestMapping("imagefile")
+public class ImageDataController {
+	
+	@Autowired
+	ImageDataService service;
+	
+	@GetMapping
+	public Optional<ImageData> findByName(@PathVariable String fileName) {
+
+		return service.findByName(fileName);
+
+	}
+
+}

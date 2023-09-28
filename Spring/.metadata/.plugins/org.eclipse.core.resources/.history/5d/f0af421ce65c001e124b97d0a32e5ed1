@@ -1,0 +1,18 @@
+package com.sudeep.security.singleton;
+
+public class LazySingletonDemo {
+
+	private static LazySingletonDemo instance;
+
+	private LazySingletonDemo() {
+
+	}
+
+	public static LazySingletonDemo getInstance() {
+		if (instance == null) {
+			instance = new LazySingletonDemo();
+		}
+		return instance;
+	}
+
+}

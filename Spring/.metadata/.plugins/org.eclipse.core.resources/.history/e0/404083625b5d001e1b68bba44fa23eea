@@ -1,0 +1,20 @@
+package com.sudeep.security.designpattern.prototype;
+
+public class PrototypeMainClass {
+	
+	public static void main(String[] args) throws CloneNotSupportedException {
+		
+		BookStore bs = new BookStore();
+		bs.setId(1);
+		bs.setName("Amazon");
+		bs.setLocation("NC");
+		bs.setNumOfBooks(100);
+		
+		System.out.println(bs.toString());
+		
+		BookStore bs1 = (BookStore) bs.clone();
+		bs1.setId(2);
+		System.out.println(bs1.toString());
+	}
+
+}

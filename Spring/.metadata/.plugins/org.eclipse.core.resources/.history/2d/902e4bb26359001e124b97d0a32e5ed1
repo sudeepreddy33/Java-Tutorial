@@ -1,0 +1,5 @@
+package com.sudeep.security.repository;
+
+public interface ImageDataRepository {
+
+}

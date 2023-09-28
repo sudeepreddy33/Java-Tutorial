@@ -1,0 +1,5 @@
+package com.sudeep.security.designpattern.factory;
+
+public interface Car {
+
+}
